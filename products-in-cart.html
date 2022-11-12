@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        :root{
+    --primary-color: #3C4048;
+    --secondary-color: #00ABB3;
+    --gray: #B2B2B2;
+    --old-white: #EAEAEA;
+    --font: 'Red Rose', cursive;
+    --tittle-size: 3.5rem;
+    --subtittle-size: 2rem;
+    --paragraph-size: 1.6rem;
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-size: 62.5%;
+    font-family: var(--font);
+}
+        .products-preview-product{
+    width: 150px;
+    text-align: center;
+}
+.products-preview-product img{
+    width: 150px;
+}
+.products-preview-product p:nth-child(2){
+    font-size: 2rem;
+}
+
+.products-preview-product p:nth-child(4){
+    font-size: 1.5rem;
+    margin-top: 8px;
+}
+
+    .mobile-cart-container{
+        width: 340px;
+        height: 90vh;
+        display: flex;
+        flex-wrap: wrap;
+        background: var(--gray);
+    }
+    </style>
+</head>
+<body>
+    <div class="mobile-cart-container">
+        <div class="products-preview-product">
+            <img src="./assets/images/kotion.png" alt="">
+            <p>Kotion G2000</p>
+            <p>Auriculares con cancelacion de ruido y microfono incorporado, comodos y practicos.</p>
+            <p>$340.00</p>
+        </div>
+    </div>
+    
+</body>
+</html>

@@ -17,6 +17,9 @@ html{
     font-size: 62.5%;
     font-family: var(--font);
 }
+.inactive{
+    display: none;
+}
 
 .navbar{
     display: flex;
@@ -215,6 +218,52 @@ main{
 .product-card-price{
     font-size: var(--paragraph-size);
 }
+
+/* MOBILE CART ICON*/
+.mobile-cart-icon{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    z-index: 10;
+}
+.mobile-cart-icon img{
+    width: 64px;
+    background: #3C4048;
+    border-radius: 50%;
+    object-fit: fill;
+}
+
+/* MOBILE CART CONTAINER */
+.mobile-cart-container{
+    width: 95%;
+    height: 95vh;
+    background: #e9e4e4e8;
+    position: fixed;
+    top: 0;
+    left: 10px;
+}
+
+.mobile-cart-container p:nth-child(1){
+    font-size: var(--subtittle-size);
+    text-align: center;
+}
+
+.mobile-cart-container div:nth-child(2){
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+
+
+
+
+
+
+
+
+
+
 
 @media (min-width: 1400px) {
     .products-menu{

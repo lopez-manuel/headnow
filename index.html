@@ -18,13 +18,14 @@
         </div>
         <ul class="navbar-menu-container">
             <li><a href="#">Home</a></li>
-            <li><a href="#">Productos</a></li>
+            <li id="products"><a href="#">Productos</a></li>
             <li><a href="#">Nosotros</a></li>
             <li><a href="#">Politica</a></li>
+            <li><a href="./login.html">Login</a></li>
         </ul>
     </nav>
 
-    <dvi class="products-menu">
+    <dvi class="products-menu inactive">
         <ul class="products-menu-list">
             <li><a href="#">Gamers</a></li>
             <li><a href="#">Inalambricos</a></li>
@@ -60,6 +61,28 @@
             </div>
         </div>
     </dvi>
+
+    <div class="mobile-cart-icon">
+        <img src="./assets/icons/icons8-cart-64.png" alt="">
+    </div>
+
+    <div class="mobile-cart-container inactive">
+        <p class="flex1">Total de articulos: <span>2</span></p>
+        <div>
+            <div class="products-preview-product">
+                <img src="./assets/images/kotion.png" alt="">
+                <p>Kotion G2000</p>
+                <p>$<span id="price">340.00</span></p>
+            </div>
+
+    
+            <div class="products-preview-product">
+                <img src="./assets/images/kotion.png" alt="">
+                <p>Kotion G2000</p>
+                <p>$<span id="price">340.00</span></p>
+            </div>
+        </div>
+    </div>
 
     <main>
         <section class="promote">
@@ -112,5 +135,6 @@
 
         </section>
     </main>
+    <script src="./js/index.js"></script>
 </body>
 </html>
