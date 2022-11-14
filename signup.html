@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Red+Rose:wght@300;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/signup.css">
+    <title>HeadNow | Signup</title>
+</head>
+<body>
+    <a class="logo-link" href="./index.html"><div class="logo-container">
+        <img src="" alt="">
+        <p>HeadNow <span>Store</span></p>
+    </div></a>
+    <main>
+        <div class="login-container">
+            <picture>
+                <source media="(min-width: 600px )" srcset="./assets/images/signup-pc.jpg">
+                <img src="./assets/images/signup-mobile.jpg" alt="">
+            </picture>
+            <div class="form-container">
+                <form action="#">
+                    <label for="name">Nombre</label><input type="text" name="name" id="name">
+                    <label for="last-name">Apellidos</label><input type="text" name="last-name" id="last-name">
+                    <label for="e-mail">e-mail</label><input type="email" name="e-mail" id="e-mail">
+                    <label for="password">Contraseña</label><input type="password" name="password" id="password">
+                    <label for="repeat-password">Repetir contraseña</label><input type="password" name="repeat-password" id="repeat-password">
+                    <button>Sign up</button>
+                </form>
+                <p>¿Ya tienes cuenta? <a href="./login.html">Inicia sesión</a></p>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

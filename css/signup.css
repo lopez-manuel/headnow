@@ -1,0 +1,187 @@
+:root{
+    --primary-color: #3C4048;
+    --secondary-color: #00ABB3;
+    --gray: #B2B2B2;
+    --old-white: #EAEAEA;
+    --font: 'Red Rose', cursive;
+    --tittle-size: 3.5rem;
+    --subtittle-size: 2rem;
+    --paragraph-size: 1.6rem;
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-size: 62.5%;
+    font-family: var(--font);
+}
+
+/* LOGO  CONTAINER */
+.logo-link{
+    text-decoration: none;
+    color: black;
+}
+.logo-container{
+    width: 100%;
+    text-align: center;
+    position: static;
+    
+}
+
+.logo-container p{
+    font-size: var(--tittle-size);
+    font-weight: 700;
+}
+.logo-container p span{
+    font-size: 1.5rem;
+    color: var(--secondary-color);
+}
+
+body{
+    background: linear-gradient(135deg, #82a6c1 25%, transparent 25%) -100px 0/ 200px 200px, linear-gradient(225deg, rgba(130,166,193,0.5) 25%, transparent 25%) -100px 0/ 200px 200px, linear-gradient(315deg, #82a6c1 25%, transparent 25%) 0 0/ 200px 200px, linear-gradient(45deg, rgba(130,166,193,0.5) 25%, #ffffff 25%) 0 0/ 200px 200px;
+background-color: #ffffff;
+
+background-image: radial-gradient(#82a6c1 1px, transparent 1px);
+background-size: 35px 35px;
+background-color: #ffffff;
+
+}
+
+/* MAIN CONTAINER */
+main{
+    min-height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+/* LOGIN CONTAINER */
+
+.login-container{
+    width: 340px;
+    margin: 32px 10px;
+    font-weight: 300;
+    box-shadow: 3px 3px 10px var(--gray);
+    background: white;
+}
+.login-container img{
+    width: 100%;
+}
+/* FORM SECTION */
+.form-container p:nth-child(2){
+    font-size: var(--paragraph-size);
+    font-weight: 500;
+    margin: 24px auto;
+    text-align: center;
+}
+form{
+    border-bottom: 1px solid var(--primary-color);
+    padding: 0 8px;
+}
+
+label{
+    font-size: var(--subtittle-size);
+    display: block;
+    margin: 8px 0;
+}
+input{
+    width: 100%;
+    height: 32px;
+    font-size: 1.6rem;
+    border-radius: 8px;
+    border: 1px solid var(--gray);
+    background: var(--old-white);
+    padding-left: 8px;
+}
+button{
+    width: 50%;
+    margin: 16px 25%;
+    height: 40px;
+    border-radius: 16px;
+    border: 1px solid var(--gray);
+    font-size: var(--subtittle-size);
+    font-weight: 700;
+    background-color: var(--secondary-color);
+    color: white;
+}
+
+
+
+/* MEDIA QUERYS */
+@media (min-width: 601px) {
+    main{
+        
+    }
+    .login-container{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        width:100%;
+        
+    }
+    .login-container picture{
+        width: 45%;
+    }
+    .login-container img{
+        width: 100%;
+    }
+    .form-container{
+        width: 50%;
+        margin-right: 12px;
+    }
+}
+
+@media (min-width: 1024px){
+    button{
+        margin-top: 3vw;
+        margin-bottom: 3vw;
+    }
+    .form-container p:nth-child(2){
+        margin-top: 3vw;
+        text-align: center;
+    }
+    label{
+        margin: 2vw 0;
+    }
+    .login-container{
+        width: 90%;
+    }
+    .login-container img{
+        width: 100%;
+    }
+}
+
+@media (min-width: 1920px) {
+    .login-container{
+        width: 1024px;
+    }
+    .form-container{
+        width: 500px;
+    }
+    .login-container img{
+        width: 500px;
+    }
+    label{
+        margin: 24px 0;
+    }
+    button{
+        margin-top: 32px;
+        margin-bottom: 36px;
+    }
+    .form-container p:nth-child(2){
+        margin-top: 32px;
+    }
+
+    
+}
+
+@media (min-height: 1000px) {
+    main{
+        min-height: 70vh;
+    }
+    
+}

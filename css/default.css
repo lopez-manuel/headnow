@@ -35,10 +35,17 @@ html{
     width: 100%;
     text-align: center;
 }
-
+.logo-container img{
+    width: 32px;
+    height: 32px;
+    position: fixed;
+    top: 10px;
+    left: 10px;
+}
 .logo-container p{
     font-size: var(--tittle-size);
     font-weight: 700;
+    user-select: none;
 }
 .logo-container p span{
     font-size: 1.5rem;
@@ -46,11 +53,12 @@ html{
 }
 
 .navbar-menu-container{
-    display: flex;
+    display: none;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
     margin: 16px auto;
+    
 }
 .navbar-menu-container li{
     display: inline;
@@ -232,18 +240,33 @@ main{
     border-radius: 50%;
     object-fit: fill;
 }
+.mobile-cart-icon span{
+    display: block;
+    position: relative;
+    top: -50px;
+    left: 20px;
+    background: rgba(0, 0, 0, 0.605);
+    color: white;
+    font-size: 16px;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    text-align: center;
+    padding: 5%;
+}
 
 /* MOBILE CART CONTAINER */
 .mobile-cart-container{
     width: 90%;
-    height: 80vh;
-    background: #e9e4e4;
+    height: 650px;
+    background: white;
     position: fixed;
     top: 0;
     left: 0;
     border-radius: 24px;
     padding: 24px 0;
     margin: 24px 5%;
+    border: 1px solid black;
 }
 
 
@@ -276,10 +299,10 @@ main{
 .cart-product-preview-info p:nth-child(1){
     text-align: start;
     overflow: hidden;
-   text-overflow: ellipsis;
-   display: -webkit-box;
-   -webkit-box-orient: vertical;
-   -webkit-line-clamp: 2; /* number of lines to show */
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2; /* number of lines to show */
 }
 .cart-product-preview-info p:nth-child(3){
     font-size: var(--paragraph-size);
@@ -318,7 +341,21 @@ main{
 
 
 
-
+@media (min-width: 601px) {
+    .navbar-menu-container{
+        display: flex;
+    }
+    .mobile-cart-icon{
+        display: none;
+    }
+    .logo-container{
+        width: 70vw;
+        display: inline;
+    }
+    .navbar-menu-container{
+        align-items: center;
+    }
+}
 
 
 
@@ -327,7 +364,7 @@ main{
     .products-menu{
         position: absolute;
         top: 81px;
-        right: 17vw;
+        right: 30vw;
         background: white;
         border: 2px solid var(--gray);
     }
