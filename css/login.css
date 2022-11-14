@@ -94,6 +94,7 @@ input{
     border-radius: 8px;
     border: 1px solid var(--gray);
     background: var(--old-white);
+    padding-left: 8px;
 }
 button{
     width: 50%;
@@ -134,7 +135,7 @@ button{
     }
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 1024px){
     button{
         margin-top: 3vw;
         margin-bottom: 3vw;
@@ -145,6 +146,9 @@ button{
     }
     label{
         margin: 2vw 0;
+    }
+    .login-container{
+        width: 50%;
     }
 }
 

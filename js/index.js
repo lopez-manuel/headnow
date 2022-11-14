@@ -5,7 +5,7 @@ const mobileCartContainer = document.querySelector('.mobile-cart-container')
 
 
 products.addEventListener('click',toggleProductsMenu)
-products.addEventListener('mouseover',toggleProductsMenu)
+//products.addEventListener('mouseover',toggleProductsMenu)
 productsMenu.addEventListener('mouseleave',toggleProductsMenu)
 mobileCartIcon.addEventListener('click', toggleMobileCartContainer)
 
