@@ -13,20 +13,25 @@
 <body>
     <nav class="navbar">
         <div class="logo-container">
-            <img src="./assets/icons/mobil-menu.png" alt="">
+            <img class="mobile-menu" src="./assets/icons/mobil-menu.png" alt="">
             <p>HeadNow <span>Store</span></p>
         </div>
-        <ul class="navbar-menu-container">
-            <li><a href="#">Home</a></li>
+
+        <ul id="nav-menu" class="navbar-menu-container">
+            <li><a href="./index.html">Home</a></li>
             <li id="products"><a href="#">Productos</a></li>
             <li><a href="#">Nosotros</a></li>
-            <li><a href="#">Politica</a></li>
+            <li><a href="./politicas.html">Politica</a></li>
             <li><a href="./login.html">Login</a></li>
         </ul>
-        <ul class="navbar-menu-container">
-            <li><img width="32px" src="./assets/icons/icons8-carrito-de-compras-64.png" alt="">Carrito</li>
-            <li><img width="32px" src="./assets/icons/perfil.png" alt="">Cuenta</li>
+
+        <ul class="navbar-menu-container inactive">
+            <li class="desktop-cart-icon"><img width="32px" src="./assets/icons/icons8-carrito-de-compras-64.png" alt="">Carrito</li>
+            <li class="desktop-profile-icon"><img width="32px" src="./assets/icons/perfil.png" alt="">Cuenta</li>
         </ul>
+        <div class="search-bar">
+            <button>Buscar</button><input type="text" name="search" id="search">
+        </div>
     </nav>
 
     <dvi class="products-menu inactive">
