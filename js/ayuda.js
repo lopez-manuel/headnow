@@ -1,9 +1,3 @@
-const products = document.getElementById('products');
-const productsMenu = document.querySelector('.products-menu');
-const mobileCartIcon = document.querySelector('.mobile-cart-icon');
-const mobileCartContainer = document.querySelector('.mobile-cart-container');
-const navMenu = document.getElementById('nav-menu');
-const menuMobileButton = document.querySelector('.mobile-menu');
 const orders = document.getElementById('orders');
 const howToBuyContainer = document.querySelector('.how-to-buy-container')
 const payments = document.getElementById('payments');
@@ -15,11 +9,8 @@ const shippingContainer = document.querySelector('.shipping-container')
 const refund = document.getElementById('refund')
 const refundContainer = document.querySelector('.refund-container')
 
-products.addEventListener('click',toggleProductsMenu);
-//products.addEventListener('mouseover',toggleProductsMenu);
-productsMenu.addEventListener('mouseleave',toggleProductsMenu);
-//mobileCartIcon.addEventListener('click', toggleMobileCartContainer);
-menuMobileButton.addEventListener('click', toggleNavMenu);
+
+
 
 orders.addEventListener('click', showHowToBuyContainer)
 payments.addEventListener('click', showPaymentsContainer)
@@ -28,18 +19,8 @@ shipping.addEventListener('click', showShippingContainer)
 refund.addEventListener('click', showRefundContainer)
 
 
-function toggleProductsMenu(){
-    productsMenu.classList.toggle('inactive');
-    navMenu.classList.remove('show-navbar-menu-container');
-}
 
-function toggleMobileCartContainer(){
-    mobileCartContainer.classList.toggle('inactive');
-}
 
-function toggleNavMenu (){
-    navMenu.classList.toggle('show-navbar-menu-container');
-}
 
 function showHowToBuyContainer(e){
     e.preventDefault()

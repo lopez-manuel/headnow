@@ -8,7 +8,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Red+Rose:wght@300;500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./css/politicas.css">
+    <link rel="stylesheet" href="./css/ayuda.css">
+    <link rel="stylesheet" href="./css/navbar.css">
+    <link rel="stylesheet" href="./css/float-icons.css">
     <title>Politicas</title>
 </head>
 <body>
@@ -70,7 +72,61 @@
               <p>$340.00</p>
           </div>
       </div>
-  </dvi>
+    </dvi>
+    <div class="mobile-cart-icon">
+      <img src="./assets/icons/icons8-carrito-de-compras-64.png" alt="">
+      <span>2</span>
+    </div>
+    <div class="mobile-profile-icon">
+      <img src="./assets/icons/perfil.png" alt="">
+    </div>
+    <div class="profile-container">
+      <ul id="nav-menu" class="profile-container-nav">
+          <li><a href="./perfil.html">Perfil</a></li>
+          <li><a href="#">Ordenes</a></li>
+          <li><a href="./ayuda.html">Ayuda</a></li>
+          <li><a href="./login.html">Salir</a></li>
+      </ul>
+      <div class="triangle"></div>
+    </div>
+    <div class="mobile-cart-container inactive">
+      <p>Total de articulos: <span>2</span></p>
+      <div>
+          <div class="cart-product-preview">
+              <img src="./assets/images/kotion.png" alt="">
+              <div class="cart-product-preview-info">
+                  <p>Kotion G2000</p>
+                  <div class="amount">
+                      <img src="./assets/icons/boton-menos.png" alt="quitar producto"> <span id="cart-product-amount">1</span> <img src="./assets/icons/boton-mas.png" alt="agregar producto">
+                  </div>
+                  <p>$<span id="price">340.00</span></p>
+              </div>
+              <div class="cart-product-preview-buttons">
+                  <button>Eliminar</button>
+                  <button>Ver</button>
+              </div>
+              
+          </div>
+          <!--PRODUCTO 2 DE PRUEBA-->
+          <div class="cart-product-preview">
+              <img src="./assets/images/onikuma k19.png" alt="">
+              <div class="cart-product-preview-info">
+                  <p>Audifonos gamer onikuma K19 con luz rgb LED</p>
+                  <div class="amount">
+                      <img src="./assets/icons/boton-menos.png" alt="quitar producto"> <span id="cart-product-amount">1</span> <img src="./assets/icons/boton-mas.png" alt="agregar producto">
+                  </div>
+                  <p>$<span id="price">720.00</span></p>
+              </div>
+              <div class="cart-product-preview-buttons">
+                  <button>Eliminar</button>
+                  <button>Ver</button>
+              </div>
+              
+          </div>
+
+  
+      </div>
+    </div>
 
     <main>
         <aside>
@@ -139,7 +195,7 @@
             <p class="paragraph">Los cupones de descuentos estan limitados a fecha de expiracion y a determinadas unidades por cliente hasta agotar el presupuesto por promociones.</p>
             <p class="title">Promociones bancarias</p>
             <p class="subtitle">3, 6 y 12 MESES CON TARJETAS DE CRÉDITO PARTICIPANTES</p>
-            <ul>
+            <ul class="ul">
               <li>Válido desde enero hasta diciembre 2023.</li>
               <li>Aplica compras minimas de $3,000.00 mxn.</li>
               <li>La promocion no es acumulable con otras promociones y/o descuentos.</li>
@@ -170,7 +226,7 @@
             <figure>
               <img class="payments-img" src="./assets/images/envio.jpg" alt="">
             </figure>
-            <ul>
+            <ul class="ul">
               <li>La fecha de entrega puede variar de 2 a 6 días dependiendo de la ubicación de entrega, la entrega la hace alguna paquetería como FedEx, DHL o Tracusa.</li>
               <li>La entrega se hace a pie de camión o en la recepción de tu edificio.</li>
               <li>Si la fecha de entrega cae en Domingo esta se recorrerá al día hábil siguiente (Lunes).</li>
@@ -198,22 +254,22 @@
             </div>
             <p class="subtitle">Devolucíon por paqueteria</p>
             <p class="paragraph">Hasta 7 días para hacer válido el procecso a partir de la fecha en la que se inicia la solicitud.</p>
-            <ul>
-              <li>Se proporcionará un folio y se enviará por correo electrónico de manera automática, la guía de recolección y detalles d etu proceso adjuntos en la misma.</li>
+            <ul class="ul">
+              <li>Se proporcionará un folio y se enviará por correo electrónico de manera automática, la guía de recolección y detalles de tu proceso adjuntos en la misma.</li>
               <li>Empaca tu artículo acorde a las sugerencias que te enviemos o enlistemos dentro del proceso, protege bien las esquinas.</li>
-              <ul><li>Si la caja exterior tiene la guía anterior con la que se entregó tu producto, retírala y/o pega la nueva que te enviamos sobre esta otra.</li>
+              <ul class="ul"><li>Si la caja exterior tiene la guía anterior con la que se entregó tu producto, retírala y/o pega la nueva que te enviamos sobre esta otra.</li>
                 <li>
                   Si dos productos tienen asignados la misma guía empaca ambos productos en una sola caja.
                 </li>
               </ul>
               <li>Solo tienes 7 dias para darle seguimiento a la solicitud, una vez vencido el tiempo deberás cancelar el proceso e iniciar una nueva solicitud del mismo modo, para generar una nueva guía de recolección con vigencia activa. (Siempre podrás hacerlo si estás dentro de los días señalados acorde a la política)</li>
             </ul>
-            <ul>
+            <ul class="ul">
               <li><strong>Aceptada la devolución:</strong> Se emite el reembolso de manera automática a la misma forma de pago, se actualizará el estado de la devolución y se enviará un correo de reembolso.</li>
               <li><strong>Rechazada la devolución:</strong> Deberás comunicarte con nosotros para la recuperacion del producto y aclaraciones.</li>
             </ul>
             <p class="subtitle">Motivos por los cuales se rechaza una solicitud de devolución: </p>
-            <ul>
+            <ul class="ul">
               <li>El producto esta personalizado (con otras fundas, stickers, pintado, etc.).</li>
               <li>El producto retorna incompleto o con piezas adicionales (piezas o instructivos).</li>
               <li>El producto que se devuelve es diferente o no acorde a la solicitud que se generó.</li>
@@ -222,6 +278,8 @@
           </div>
         </div>
     </main>
-    <script src="./js/politicas.js"></script>
+    <script src="./js/navbar.js"></script>
+    <script src="./js/float-icons.js"></script>
+    <script src="./js/ayuda.js"></script>
 </body>
 </html>
